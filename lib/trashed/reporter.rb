@@ -88,7 +88,10 @@ module Trashed
           end
         when Numeric
           Array(dimensions || :All).each do |dimension|
-            statsd.send method, :"#{namespace}.#{dimension}.#{metric}", value, sample_rate
+            statsd.send method,
+                        :"#{namespace}.#{dimension}.#{metric}",
+                        value,
+                        { sample_rate: sample_rate }
           end
         end
       end
