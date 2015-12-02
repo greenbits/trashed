@@ -9,8 +9,6 @@ Gem::Specification.new do |s|
   s.author    = 'Jeremy Kemper'
   s.email     = 'jeremykemper@gmail.com'
 
-  s.add_runtime_dependency 'statsd-ruby', '~> 1.1'
-
   s.add_development_dependency 'rake', '~> 10.2'
   s.add_development_dependency 'minitest', '~> 5.3'
 
